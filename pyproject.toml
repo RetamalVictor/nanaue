@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nanaue"
+version = "0.1.0"
+description = ""
+authors = ["Storm Timmermans <stormtimmermans@icloud.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+vi = { git = "https://github.com/m-rots/violet.git", rev = "main" }
+pygame = "^2.1.2"
+
+[tool.poetry.dev-dependencies]
+black = { version = "^22.3.0", allow-prereleases = true }
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
