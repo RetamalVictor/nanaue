@@ -1,12 +1,11 @@
-from dataclasses import dataclass
 from enum import Enum, auto
 
 import pygame as pg
 from pygame.math import Vector2
-from vi import Agent, BaseConfig, Simulation
+from vi import Agent, BaseConfig, Simulation, serde
 
 
-@dataclass
+@serde
 class FlockingConfig(BaseConfig):
     alignment_weight: float = 1.5
     cohesion_weight: float = 1
